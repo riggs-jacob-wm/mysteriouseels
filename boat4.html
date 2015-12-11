@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Mysterious Eels</title>
+    <link rel="stylesheet" type="text/css" href="boats.css" />
+</head>
+<body>
+<div class="overlay"></div>
+<!--Type of boat-->
+<div id="header">
+    <p>High Performance Boats</p>
+</div>
+<div id="nav" class="nav">
+    <ul class="nav">
+        <li><a href="boat1.html">Center Consoles</a></li>
+        <li><a href="boat2.html">Deck Boats</a></li>
+        <li><a href="boat3.html">Cuddy Cabins</a></li>
+        <li><a href="boat4.html" class="active">High Performance</a></li>
+        <li><a href="boat5.html">Jet Boats</a></li>
+        <li><a href="boat6.html">Pontoon Boats</a></li>
+    </ul>
+</div>
+<div id="body">
+    <img src="http://www.boatus.com/Assets/www.boatus.com/buyer/img/new-boater/high-performance.jpg">
+    <h2>About This Boat</h2>
+    <p>This boat is good for day cruising. There is no given max to how many people can be on board.
+        The size ranges from 20-50 ft. It has an outboard engine,
+        inboard engine, sterndrive engine.</p>
+    <h3>Rental Prices:</h3>
+    <h4>Half Day: $550</h4>
+    <h4>Full Day: $725</h4>
+
+    <form>
+        First name
+        <input type="text" name="firstname">
+        Last name
+        <input type="text" name="lastname">
+        Phone Number
+        <input type="text" name="phone">
+        Card Number
+        <input type="text" name="card">
+        CVV Number
+        <input type="text" name="cvv">
+        <input type="submit" value="Submit">
+    </form>
+    <button id="myButton" class="homeButton">Back to Home page</button>
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+</div>
+</body>
+</html>

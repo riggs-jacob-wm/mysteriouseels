@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Mysterious Eels</title>
+    <link rel="stylesheet" type="text/css" href="boats.css" />
+</head>
+<body>
+<div class="overlay"></div>
+<!--Type of boat-->
+<div id="header">
+    <p>Cuddy Cabin Boats</p>
+</div>
+<div id="nav" class="nav">
+    <ul class="nav">
+        <li><a href="boat1.html">Center Consoles</a></li>
+        <li><a href="boat2.html">Deck Boats</a></li>
+        <li><a href="boat3.html" class="active">Cuddy Cabins</a></li>
+        <li><a href="boat4.html">High Performance</a></li>
+        <li><a href="boat5.html">Jet Boats</a></li>
+        <li><a href="boat6.html">Pontoon Boats</a></li>
+    </ul>
+</div>
+<div id="body">
+    <img src="http://features.boats.com/boat-content/files/2013/04/pursuit-os-255-offshore-560x378.jpg">
+    <h2>About This Boat</h2>
+    <p>This boat is good for overnight cruising and day cruising. The maximum people that can fit
+        onto this boat is 10 people. The size of this boat ranges from 16-28 ft. It has an outboard
+        engine, sterndrive engine, and jet propulsion.</p>
+    <h3>Rental Prices:</h3>
+    <h4>Half Day: $500</h4>
+    <h4>Full Day: $700</h4>
+
+    <form>
+        First name
+        <input type="text" name="firstname">
+        Last name
+        <input type="text" name="lastname">
+        Phone Number
+        <input type="text" name="phone">
+        Card Number
+        <input type="text" name="card">
+        CVV Number
+        <input type="text" name="cvv">
+        <input type="submit" value="Submit">
+    </form>
+    <div id="button">
+    <button id="myButton" class="homeButton">Back to Home page</button>
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+    </div>
+</div>
+</body>
+</html>
