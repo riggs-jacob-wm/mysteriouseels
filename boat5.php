@@ -9,28 +9,28 @@
 <div class="overlay"></div>
 <!--Type of boat-->
 <div id="header">
-    <p>Pontoon Boats</p>
+    <p>Jet Boats</p>
 </div>
 <!--Navigation bar-->
 <div id="nav" class="nav">
     <ul class="nav">
-        <li><a href="boat1.html">Center Consoles</a></li>
-        <li><a href="boat2.html">Deck Boats</a></li>
-        <li><a href="boat3.html">Cuddy Cabins</a></li>
-        <li><a href="boat4.html">High Performance</a></li>
-        <li><a href="boat5.html">Jet Boats</a></li>
-        <li><a href="boat6.html" class="active">Pontoon Boats</a></li>
+        <li><a href="boat1.php">Center Consoles</a></li>
+        <li><a href="boat2.php">Deck Boats</a></li>
+        <li><a href="boat3.php">Cuddy Cabins</a></li>
+        <li><a href="boat4.php">High Performance</a></li>
+        <li><a href="boat5.php" class="active">Jet Boats</a></li>
+        <li><a href="boat6.php">Pontoon Boats</a></li>
     </ul>
 </div>
 <div id="body">
     <!--Boat information-->
-    <img src="http://panamacitybeachfishing.net/wp-content/uploads/2014/04/avalon-gs-quad-lounger.jpg">
+    <img src="http://www.powersportsupply.co/product_images/b/785/YamahaJetBoating__87363.jpg">
     <h2>About This Boat</h2>
     <p>This boat is good for day cruising. The maximum amount of people that can fit is 10 people.
         The size ranges from 14-26 ft. It has jet propulsion.</p>
     <h3>Rental Prices:</h3>
-    <h4>Half Day: $360</h4>
-    <h4>Full Day: $450</h4>
+    <h4>Half Day: $525</h4>
+    <h4>Full Day: $725</h4>
 </div>
 <div id="form">
     <!--Reservation information-->
@@ -39,7 +39,11 @@
         <input type="text" name="firstname"><br>
         Last name
         <input type="text" name="lastname"><br>
-        Phone Number
+        E-mail
+        <input type="text" name="email"><br>
+        Password
+        <input type="password" name="pword"><br>
+        Phone Number (Optional)
         <input type="text" name="phone"><br>
         Card Number
         <input type="text" name="card"><br>
@@ -59,3 +63,19 @@
 </div>
 </body>
 </html>
+<?php
+$servername = "127.0.0.1";
+$username = "root";
+$password = "root";
+
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=mysteriouseels", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully";
+}
+catch(PDOException $e)
+{
+    echo "Connection failed: " . $e->getMessage();
+}
+?>
