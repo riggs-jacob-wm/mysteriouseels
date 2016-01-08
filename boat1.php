@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>The Mysterious Eels</title>
     <link type="text/css" rel="stylesheet" href="boats.css" />
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="boats.js"></script>
 </head>
 <body>
 <div class="overlay"></div>
@@ -27,7 +29,7 @@
     <img src="http://www.cobiaboats.com/wp-content/uploads/2011/12/Cobia-217-Center-Console.jpg">
     <h2>About This Boat</h2>
     <p>This boat is good for freshwater fishing, saltwater fishing, and day cruising. There is
-        No set max for how many people can fit, so throw on as many as you can. The boats are 18-48 ft
+        No set max for how many people can fit, so throw as many on as you can. The boats are 18-48 ft
         and have an outboard engine.</p>
     <h3>Rental Prices:</h3>
     <h4>Half Day: $320</h4>
@@ -35,22 +37,30 @@
 </div>
 <!--Reservation information-->
 <div id="form">
-    <form>
+    <form action="users.php" method="post">
         First name
-        <input type="text" name="firstname"><br>
+        <input type="text" name="firstname" id="firstname" value="<?=$varFirstName;?>" /><br>
         Last name
-        <input type="text" name="lastname"><br>
+        <input type="text" name="lastname" id="lastname" value="<?=$varLastName;?>"><br>
         E-mail
-        <input type="text" name="email"><br>
+        <input type="text" name="e-mail" id="e-mail" value="<?=$varEmail;?>"><br>
         Password
-        <input type="password" name="pword"><br>
+        <input type="password" name="pword" id="pword" value="<?=$varPassword;?>"><br>
         Phone Number (Optional)
-        <input type="text" name="phone"><br>
+        <input type="number" name="phone" id="phone" value="<?=$varPhoneNumber;?>"><br>
         Card Number
-        <input type="text" name="card"><br>
+        <input type="number" name="ccard" id="ccard" value="<?=$varCreditCard;?>"><br>
         CVV Number
-        <input type="text" name="cvv"><br>
-        <input type="submit" value="Submit">
+        <input type="number" name="cvv" id="cvv" value="<?$varCVV;?>"><br>
+        Date for Reservation
+        <input type="date" name="date" id="date" value="<?$varReserveDate;?>"><br>
+        Time Slot for Reservation
+        <select id="timeslot" name="timeslot" ">
+            <option value="halfday">Half day</option>
+            <option value="fullday">Full day</option>
+        </select>
+        <input type="hidden" name="boattype" value="centerconsole"><br>
+        <input type="submit" value="Submit" name="formSubmit" />
     </form>
 </div>
 <!--Takes the user back to the home page-->
