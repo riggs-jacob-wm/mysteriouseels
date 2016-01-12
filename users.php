@@ -1,12 +1,21 @@
 <?php
-if($_POST['formSubmit'] == 'Submit') {
-    $varFirstName = $_POST['firstname'];
-    $varLastName = $_POST['lastname'];
-    $varEmail = $_POST['e-mail'];
-    $varPassword = $_POST['pword'];
-    $varPhoneNumber = $_POST['phone'];
-    $varCreditCard = $_POST['ccard'];
-    $varCVV = $_POST['cvv'];
-    $varReserveDate = $_POST['date'];
+require_once('connection.php');
+$error = false;
+$success = false;
+if(@$_POST['formSubmit']){
+    if(!$_POST['firstname']){
+        $error .= '<p>Email is a required field!</p>';
+    }
+    if(!$_POST['lastname']){
+        $error .= '<p>Email is a required field!</p>';
+    }
+    if(!$_POST['email']){
+        $error .= '<p>Email is a required field!</p>';
+    }
+    if(!$_POST['email']){
+        $error .= '<p>Email is a required field!</p>';
+    }
+    if(!$_POST['email']){
+        $error .= '<p>Email is a required field!</p>';
+    }
 }
-?>

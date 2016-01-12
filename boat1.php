@@ -39,21 +39,21 @@
 <div id="form">
     <form action="users.php" method="post">
         First name
-        <input type="text" name="firstname" id="firstname" value="<?=$varFirstName;?>" /><br>
+        <input type="text" name="firstname" id="firstname"/><br>
         Last name
-        <input type="text" name="lastname" id="lastname" value="<?=$varLastName;?>"><br>
+        <input type="text" name="lastname" id="lastname"><br>
         E-mail
-        <input type="text" name="e-mail" id="e-mail" value="<?=$varEmail;?>"><br>
+        <input type="text" name="e-mail" id="email"><br>
         Password
-        <input type="password" name="pword" id="pword" value="<?=$varPassword;?>"><br>
-        Phone Number (Optional)
-        <input type="number" name="phone" id="phone" value="<?=$varPhoneNumber;?>"><br>
+        <input type="password" name="pword" id="pword"><br>
+        Phone Number
+        <input type="number" min="10" max=10" name="phone" id="phone"><br>
         Card Number
-        <input type="number" name="ccard" id="ccard" value="<?=$varCreditCard;?>"><br>
+        <input type="number" name="ccard" id="ccard"><br>
         CVV Number
-        <input type="number" name="cvv" id="cvv" value="<?$varCVV;?>"><br>
+        <input type="number" name="cvv" id="cvv"><br>
         Date for Reservation
-        <input type="date" name="date" id="date" value="<?$varReserveDate;?>"><br>
+        <input type="date" name="date" id="date"><br>
         Time Slot for Reservation
         <select id="timeslot" name="timeslot" ">
             <option value="halfday">Half day</option>
