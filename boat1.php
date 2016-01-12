@@ -39,19 +39,19 @@
 <div id="form">
     <form action="users.php" method="post">
         First name
-        <input type="text" name="firstname" id="firstname"/><br>
+        <input type="text" name="fname" id="fname"/><br>
         Last name
-        <input type="text" name="lastname" id="lastname"><br>
+        <input type="text" name="lname" id="lname"><br>
         E-mail
-        <input type="text" name="e-mail" id="email"><br>
+        <input type="text" name="email" id="email"><br>
         Password
         <input type="password" name="pword" id="pword"><br>
-        Phone Number
-        <input type="number" min="10" max=10" name="phone" id="phone"><br>
-        Card Number
-        <input type="number" name="ccard" id="ccard"><br>
+        Phone Number (Optional)
+        <input type="number" name="phone" id="phone"><br>
+        Credit Card Number
+        <input type="number" max="16" name="ccard" id="ccard"><br>
         CVV Number
-        <input type="number" name="cvv" id="cvv"><br>
+        <input type="number" min="3" max="4" name="cvv" id="cvv"><br>
         Date for Reservation
         <input type="date" name="date" id="date"><br>
         Time Slot for Reservation
