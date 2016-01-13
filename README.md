@@ -13,4 +13,4 @@ the html skeleton, and progressed from there by adding css, and any other parts 
 We had scrum sprints that we would use as a reference to the current problems with the site.
 
 IMPORTANT:
-When grading, please start from the "firstpage.html" document.
+When testing the website, please start from the "index.html" document.
