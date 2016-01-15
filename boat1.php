@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Mysterious Eels</title>
     <link type="text/css" rel="stylesheet" href="boats.css" />
     <script src="jquery-2.1.4.min.js"></script>
     <script src="boats.js"></script>
+    <title>The Mysterious Eels</title>
 </head>
 <body>
 <div class="overlay"></div>
 <!--Type of boat-->
 <div id="header">
-    <p>Center Console Boats</p>
+    <p>The Mysterious Eels</p>
 </div>
 <!--Navigation bar-->
 <div id="nav" class="nav">
@@ -49,17 +49,17 @@
         Phone Number (Optional)
         <input type="number" name="phone" id="phone"><br>
         Credit Card Number
-        <input type="number" max="16" name="ccard" id="ccard"><br>
+        <input type="number" name="ccard" id="ccard"><br>
         CVV Number
-        <input type="number" min="3" max="4" name="cvv" id="cvv"><br>
+        <input type="number" name="cvv" id="cvv"><br>
         Date for Reservation
-        <input type="date" name="date" id="date"><br>
+        <input type="date" name="reservedate" id="reservedate"><br>
         Time Slot for Reservation
-        <select id="timeslot" name="timeslot" ">
+        <select id="timeslot" name="timeslot">
             <option value="halfday">Half day</option>
             <option value="fullday">Full day</option>
         </select>
-        <input type="hidden" name="boattype" value="centerconsole"><br>
+        <input type="hidden" name="boattype" value="Center Consoles"><br>
         <input type="submit" value="Submit" name="formSubmit" />
     </form>
 </div>
@@ -74,19 +74,3 @@
 </div>
 </body>
 </html>
-<?php
-$servername = "127.0.0.1";
-$username = "root";
-$password = "root";
-
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=mysteriouseels", $username, $password);
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully";
-}
-catch(PDOException $e)
-{
-    echo "Connection failed: " . $e->getMessage();
-}
-?>
